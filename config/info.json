@@ -1,17 +1,19 @@
 {
-  "keyboard_name": "PAD15",
+  "id": "PAD15",
+  "name": "PAD15",
   "layouts": {
-    "LAYOUT": {
+    "charybdis_6col_layout": {
+      "name": "PAD15",
       "layout": [
-        {"x": 0, "y": 0, "label": "Home"},
-        {"x": 1, "y": 0, "label": "End"},
-        {"x": 2, "y": 0, "label": "Insert"},
+        {"x": 0, "y": 0, "label": "Del"},
+        {"x": 1, "y": 0, "label": "Home"},
+        {"x": 2, "y": 0, "label": "End"},
         {"x": 3.5, "y": 0.5, "label": "EC11"},
 
         {"x": 0, "y": 1, "label": "F7"},
         {"x": 1, "y": 1, "label": "F8"},
         {"x": 2, "y": 1, "label": "F9"},
-        {"x": 3.5, "y": 2, "label": "SWITCH"},
+        {"x": 3.5, "y": 2.5, "label": "SWITCH"},
 
         {"x": 0, "y": 2, "label": "F4"},
         {"x": 1, "y": 2, "label": "F5"},
@@ -26,5 +28,6 @@
         {"x": 2, "y": 4, "label": "F12"}
       ]
     }
-  }
+  },
+  "sensors": []
 }
