@@ -3,7 +3,7 @@ id: PAD15
 name: PAD15
 type: shield
 url: https://github.com/lsn5966397/PAD15/edit/main/config/PAD15.yml
-requires: [nrfmicro_13_52840]
+requires: [nice_nano_v2]
 features:
 
   - keys
