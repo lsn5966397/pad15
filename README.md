@@ -46,15 +46,7 @@ pipx install west
 # 5. 重载 shell（让 west 命令可用）
 source ~/.bashrc
 
-# 初始化 west（把当前仓库当作 zmk-config）
-west init -l
-
-# 
-cd /workspaces/zmk
-
-# 更新所有源码和模块
-west update
-
+# 6. 安装 Zephyr SDK
 cd ~
 wget https://github.com/zephyrproject-rtos/sdk-ng/releases/download/v0.16.5/zephyr-sdk-0.16.5_linux-x86_64.tar.xz
 
@@ -64,6 +56,15 @@ cd zephyr-sdk-0.16.5
 ./setup.sh
 
 export ZEPHYR_SDK_INSTALL_DIR=~/zephyr-sdk-0.16.5
+
+# 
+cd /workspaces/zmk
+
+# 7. 更新所有源码和模块
+west update
+
+# 初始化 west（把当前仓库当作 zmk-config）
+west init -l
 
 # 验证 应该输出： /home/codespace/zephyr-sdk-0.16.5
 echo $ZEPHYR_SDK_INSTALL_DIR
