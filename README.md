@@ -24,6 +24,18 @@ pad15/       ← 项目根目录
 │           └── pad15.zmk.yml
 ├── west.yml
 └── README.md
+zmk-config/
+├── config/
+│   ├── pad15.conf
+│   ├── pad15.json
+│   ├── pad15.zmk.yml
+│   └── boards/shields/pad15/
+│       ├── Kconfig.defconfig
+│       ├── Kconfig.shield
+│       ├── pad15.keymap
+│       └── pad15.overlay
+├── README.md
+└── west.yml
 ```
 这里建议项目名称用小写，因为在`config/Kconfig.defconfig` 中需定义大写的项目名称，随后使用小写，都用大写可能会导致混乱。
 
