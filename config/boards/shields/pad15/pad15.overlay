@@ -110,7 +110,7 @@
     status = "okay";
 };
 
-& {
+/ {
     /* 摇杆作为模拟输入 → 鼠标指针 */
     joystick: analog_input_0 {
         compatible = "zmk,analog-input";
