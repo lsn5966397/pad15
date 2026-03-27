@@ -55,6 +55,19 @@ cd /workspaces/zmk
 # 更新所有源码和模块
 west update
 
+cd ~
+wget https://github.com/zephyrproject-rtos/sdk-ng/releases/download/v0.16.5/zephyr-sdk-0.16.5_linux-x86_64.tar.xz
+
+tar xvf zephyr-sdk-0.16.5_linux-x86_64.tar.xz
+
+cd zephyr-sdk-0.16.5
+./setup.sh
+
+export ZEPHYR_SDK_INSTALL_DIR=~/zephyr-sdk-0.16.5
+
+# 验证 应该输出： /home/codespace/zephyr-sdk-0.16.5
+echo $ZEPHYR_SDK_INSTALL_DIR
+
 # 正式编译命令
 west build -s app -b nice_nano -p -- -DSHIELD=pad15 -DZMK_CONFIG="/workspaces/pad15/config"
 ```
