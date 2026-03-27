@@ -60,6 +60,9 @@ export ZEPHYR_SDK_INSTALL_DIR=~/zephyr-sdk-0.16.5
 # 验证 应该输出： /home/codespace/zephyr-sdk-0.16.5
 echo $ZEPHYR_SDK_INSTALL_DIR
 
+# 安装 ninja-build
+sudo apt update && sudo apt install -y ninja-build
+
 # 注册 Zephyr SDK
 west zephyr-export
 
