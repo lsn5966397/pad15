@@ -4,11 +4,11 @@ on:
   push:
     paths:
       - ".github/workflows/build.yml"
-      - "app/**"
+      - "config/**"
   pull_request:
     paths:
       - ".github/workflows/build.yml"
-      - "app/**"
+      - "config/**"
   schedule:
     - cron: "22 4 * * *"
 
@@ -43,7 +43,7 @@ jobs:
             tools/
             zephyr/
             bootloader/
-          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('app/west.yml') }}
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('west.yml') }}
           restore-keys: |
             ${{ runner.os }}-build-${{ env.cache-name }}-
             ${{ runner.os }}-build-
