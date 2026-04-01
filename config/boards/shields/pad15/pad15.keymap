@@ -69,7 +69,7 @@
         function {
             //sensor-bindings = <&EC11_ROTATE>;
             bindings = <
-                &kp K_LOCK  &bl BL_INC  &bl BL_DEC  &kp C_MUTE
+                &rgb_ug RGB_TOG  &bl BL_INC  &bl BL_DEC  &kp C_MUTE
                 &kp F7      &kp F8      &kp F9      &mkp LCLK
                 &kp F4      &kp F5      &kp F6      &none
                 &kp F1      &kp F2      &kp F3      &none
@@ -80,7 +80,7 @@
         game {
             //sensor-bindings = <&EC11_ROTATE>;
             bindings = <
-                &trans      &bt BT_CLR    &bootloader    &trans
+                &kp K_LOCK      &bt BT_CLR    &bootloader    &kp C_MUTE
                 &trans      &double_tap_up &trans   &trans
                 &kp LEFT    &kp DOWN    &kp RIGHT   &none
                 &kp LCTRL   &trans      &kp LALT    &none
