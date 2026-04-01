@@ -18,6 +18,7 @@ This is a wireless dual-mode multifunction mini-keyboard project with EC11 knob 
 pad15/       ← 项目根目录
 ├── config/
 │   ├── pad15.json
+│   ├── west.yml
 │   └── boards/shields/pad15/
 │       ├── Kconfig.defconfig
 │       ├── Kconfig.shield
@@ -26,8 +27,7 @@ pad15/       ← 项目根目录
 │       ├── pad15.dtsi
 │       ├── pad15.conf
 │       └── pad15.overlay
-├── README.md
-└── west.yml
+└── README.md
 ```
 这里建议项目名称用小写，因为在`Kconfig.shield` 中需定义大写的项目名称，其余各处均可使用小写，都用大写可能会导致混乱（比如不小心把该大写的也改成小写了）。
 
