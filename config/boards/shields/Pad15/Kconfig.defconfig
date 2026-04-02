@@ -4,6 +4,6 @@
 if SHIELD_PAD15
 
 config ZMK_KEYBOARD_NAME
-    default "pad15"
+    default "Pad15"
 
 endif
