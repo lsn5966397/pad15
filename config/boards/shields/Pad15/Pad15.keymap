@@ -42,12 +42,12 @@
         BOOTLOADER {
             bindings = <&bootloader>;
             key-positions = <0 2 14 16>;
-            timeout-ms = <100>;
+            timeout-ms = <150>;
         };
         BTCLR {
             bindings = <&bt BT_CLR>;
             key-positions = <2 14 16>;
-            timeout-ms = <100>;
+            timeout-ms = <150>;
         };
     };
 
