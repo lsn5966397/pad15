@@ -13,7 +13,7 @@ This is a wireless dual-mode multifunction mini-keyboard project with EC11 knob 
 
 现在的ZMK支持只写配置文件，配置文件的结构如下：
 ```
-pad15/       ← 项目根目录
+Pad15/       ← 项目根目录
 ├── config/
 │   ├── Pad15.json
 │   ├── west.yml
