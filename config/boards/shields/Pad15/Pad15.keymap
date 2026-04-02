@@ -76,7 +76,7 @@
 
         game {
             bindings = <
-                &kp PAUSE_BREAK      &kp C_PREVIOUS     &kp C_NEXT      &kp C_MUTE
+                &kp C_PLAY_PAUSE      &kp C_PREVIOUS     &kp C_NEXT      &kp C_MUTE
                 &none           &kp UP             &none           &none
                 &kp LEFT        &kp DOWN           &kp RIGHT       &none
                 &kp LEFT_SHIFT  &none              &kp LALT        &none
