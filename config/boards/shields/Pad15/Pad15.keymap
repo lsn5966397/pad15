@@ -22,32 +22,32 @@
         change_layer {
             bindings = <&tog 0>;
             key-positions = <2 14>;
-            timeout-ms = <80>;
+            timeout-ms = <150>;
             layers = <2>;
         };
 
         change_layer1 {
             bindings = <&tog 1>;
             key-positions = <2 14>;
-            timeout-ms = <80>;
+            timeout-ms = <150>;
             layers = <0>;
         };
 
         change_layer2 {
             bindings = <&tog 2>;
             key-positions = <2 14>;
-            timeout-ms = <80>;
+            timeout-ms = <150>;
             layers = <1>;
         };
         BOOTLOADER {
             bindings = <&bootloader>;
             key-positions = <0 2 14 16>;
-            timeout-ms = <40>;
+            timeout-ms = <100>;
         };
         BTCLR {
             bindings = <&bt BT_CLR>;
             key-positions = <2 14 16>;
-            timeout-ms = <40>;
+            timeout-ms = <100>;
         };
     };
 
@@ -79,8 +79,8 @@
                 &kp K_LOCK  &trans        &trans    &kp C_MUTE
                 &trans      &kp UP        &trans   &trans
                 &kp LEFT    &kp DOWN    &kp RIGHT   &none
-                &kp LCTRL   &trans      &kp LALT    &none
-                &trans      &trans      &kp SPACE   &none
+                &kp LEFT_SHIFT   &trans      &kp LALT    &none
+                &kp LCTRL      &trans      &kp SPACE   &none
             >;
         };
         /* === ZMK Studio 必须的保留层 === */
