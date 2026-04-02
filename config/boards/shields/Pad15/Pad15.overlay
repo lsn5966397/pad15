@@ -70,7 +70,7 @@
 		compatible = "worldsemi,ws2812-spi";
 		reg = <0>;
 		status = "okay";
-		spi-max-frequency = <3000000>;
+		spi-max-frequency = <2000000>;
 		chain-length = <16>;
 		spi-one-frame = <0x70>;
 		spi-zero-frame = <0x40>;
@@ -95,7 +95,7 @@
     encoders {
         compatible = "zmk,keymap-sensors";
         sensors = <&ec11_encoder>;
-        triggers-per-rotation = <30>;   /* 通常和 steps 保持一致，EC11 常见值 */
+        triggers-per-rotation = <20>;   /* 通常和 steps 保持一致，EC11 常见值 */
     };
 
     ec11_encoder: ec11_encoder {
@@ -103,7 +103,7 @@
         label = "EC11";
         a-gpios = <&gpio1 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;   /* ← 这里改成你实际接的 A 脚 */
         b-gpios = <&gpio1 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;   /* ← 这里改成你实际接的 B 脚 */
-        steps = <30>;          /* EC11 常见 30 步/圈（有些是 20 或 80），先用 30 */
+        steps = <20>;          /* EC11 常见 30 步/圈（有些是 20 或 80），先用 30 */
         status = "okay";
     };
 };
