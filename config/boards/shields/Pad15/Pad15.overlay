@@ -121,7 +121,7 @@
 
         /* 配置 X 轴对应的 ADC 通道 */
         x-ch {
-            io-channels = <&adc 0>;
+            io-channels = <&adc 5>;
             mv-mid = <1650>;
             mv-min-max = <1600>;
         	/* 摇杆盲区 (Deadzone)，防止手松开时鼠标自己飘 */
@@ -135,7 +135,7 @@
         };
         /* 配置 Y 轴对应的 ADC 通道 */
         y-ch {
-            io-channels = <&adc 5>;
+            io-channels = <&adc 0>;
             mv-mid = <1650>;
             mv-min-max = <1600>;
             mv-deadzone = <10>;
