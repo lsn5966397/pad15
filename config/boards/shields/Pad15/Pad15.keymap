@@ -54,9 +54,10 @@
     behaviors {
         hold_tap: hold_tap {
             compatible = "zmk,behavior-hold-tap";
+            /* 注意第一个按键是hold功能，第二个才是tap */
             bindings = <&kp>, <&kp>;
             #binding-cells = <2>;
-            tapping-term-ms = <800>;
+            tapping-term-ms = <1500>;
         };
     };
 
