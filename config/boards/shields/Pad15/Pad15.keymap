@@ -52,13 +52,11 @@
     };
 
     behaviors {
-        tap_hold: tap_hold {
+        hold_tap: hold_tap {
             compatible = "zmk,behavior-hold-tap";
-            label = "TAP_HOLD";
             bindings = <&kp>, <&kp>;
-
             #binding-cells = <2>;
-            tapping-term-ms = <600>;
+            tapping-term-ms = <800>;
         };
     };
 
@@ -66,7 +64,7 @@
         compatible = "zmk,keymap";
         office {
             bindings = <
-                &kp DEL     &tap_hold HOME C_PREVIOUS  &tap_hold END C_NEXT      &tap_hold C_MUTE C_PLAY_PAUSE
+                &kp DEL     &hold_tap C_PREVIOUS HOME  &hold_tap C_NEXT END      &hold_tap C_PLAY_PAUSE C_MUTE
                 &kp KP_NUMBER_7      &kp KP_NUMBER_8      &kp KP_NUMBER_9       &mkp LCLK
                 &kp KP_NUMBER_4      &kp KP_NUMBER_5      &kp KP_NUMBER_6      &none
                 &kp KP_NUMBER_1      &kp KP_NUMBER_2      &kp KP_NUMBER_3       &none
