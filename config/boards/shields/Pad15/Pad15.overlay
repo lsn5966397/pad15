@@ -109,6 +109,7 @@
 
 /* 开启主控的 ADC 节点 */
 &adc {
+    compatible = "nordic,nrf-saadc";
     status = "okay";
 };
 
